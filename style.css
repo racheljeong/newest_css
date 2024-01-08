@@ -1,0 +1,10 @@
+body {
+    display :flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+}
