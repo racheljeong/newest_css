@@ -1,36 +1,20 @@
 body {
-    display :flex;
-    height: 100vh;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction : row;
-    flex-wrap : wrap; */
-    flex-flow: row wrap;
-    /* align-content: center; */
+   display :grid;
+   grid-template-columns: 100px 200px;
+   grid-template-rows: 200px 100px;
+   gap: 10px;
 }
 
 .box {
     background-color: tomato;
-    width: 200px;
-    height: 200px;
-    color: antiquewhite;
     display: flex;
-    justify-content: center;
+    color: antiquewhite;
     align-items: center;
-    font-size: 24px;
+    justify-content: center;
 }
 
-/* .box:nth-child(3) {
-    background-color: aquamarine;
-    order: 2;
+.box:nth-child(3) {
+    background-color: cadetblue;
+    grid-column: 1 / -1;
 }
 
-.box:nth-child(5) {
-    background-color: cornflowerblue;
-    order: 1;
-} */
-
-.box:first-child {
-    align-self: flex-start;
-}
